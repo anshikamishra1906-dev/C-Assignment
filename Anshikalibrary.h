@@ -2,7 +2,7 @@
 #DEFINE ANSHIKA_H
 
 void display_array(int arry[], int size);
-int reverse_array(int arry[], int size);
+void reverse_array(int arry[], int size);
 int find_MaxIndex(int arry[], int size);
 int find_MinIndex(int arry[], int size);
 float find_average(int aary[], int size);
