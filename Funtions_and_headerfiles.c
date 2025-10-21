@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+int main() {
 // reverse digits of a number
 int reverse_digits(int num) {
   int r=0;
@@ -41,6 +42,46 @@ int is_prime(int num) {
 }
 
 //check if a number is prime and palindrome
+int is_primepalindrome(int num) {
+  return is_prime(num) && num==reverse_digits(num);
+} 
 
-
-
+int choice,num;
+do{
+  printf("1. Check if Armstrong\n");
+  printf("2. Check if Adams\n");
+  printf("3. Check if Prime Palindrome\n");
+  printf("4. Exit\n");
+  printf("Enter choice:");
+  scanf("%d",&choice);
+  if(choice==4) {
+     printf("Program exit!");
+     break;
+  }
+  printf("Entera num:");
+  scanf("%d",&num);
+  switch(choice) {
+     case 1:
+         if(is_armstrong(num))
+           printf("%d is an armstrong number.\n",num);
+         else
+           printf("%d is not an armstrong number.\n"num);
+         break;
+     case 2:
+         if(is_adams(num))
+           printf("%d is an adams number.\n",num);
+         else
+           printf("%d is not an adams number.\n"num);
+         break;
+     case 3:
+         if(is_primepalindrome(num))
+           printf("%d is a prime palindrome number.\n",num);
+         else
+           printf("%d is not a prime palindrome number.\n"num);
+         break;
+     default:
+           printf("Invalid choice! please select b/w 1-4");
+   }
+}while(choice != 4);
+return 0;
+}
