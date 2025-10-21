@@ -26,3 +26,13 @@ int is_armstrong(int num) {
   return sum==ans;
 }
 
+//check if a number is Adams number or not
+int is_adams(int num) {
+    int sq=num*num;
+    return reverse_digits(sq) == reverse_digits(num)*reverse_digits(num);
+}
+
+//check if a number is prime or not
+
+
+
