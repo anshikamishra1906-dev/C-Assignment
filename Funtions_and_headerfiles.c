@@ -10,3 +10,19 @@ int reverse_digits(int num) {
   return r;
 }
 //check if a number is armstrong or not
+int is_armstrong(int num) {
+  int ans=num, sum=0, count=0;
+  int sri=num;
+  while (sri>0) {
+    count++;
+    sri%10; 
+  }
+  sri=num;
+  while(sri>0) {
+      int a=sri%10;
+      sum+=pow(a, count);
+      sri/=10;
+  }
+  return sum==ans;
+}
+
