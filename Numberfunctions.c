@@ -15,7 +15,10 @@ int reverse_digits(int num) {
 int is_armstrong(int num) {
   int ans=num, sum=0, count=0;
   int sri=num;
-  while (sri>0) { count++, sri%10; }
+  while (sri>0) { 
+    count++;
+    sri%10;
+  }
   sri=num;
   while(sri>0) {
       int a=sri%10;
