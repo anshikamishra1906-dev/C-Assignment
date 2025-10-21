@@ -23,7 +23,7 @@ void reverse_array(int arry[], int size) {
 int find_MaxIndex(int arry[], int size) {
    int Max=0;
    for(int i=1;i<size;i++)
-      if(arry[i]>arry[idx]) {
+      if(arry[i]>arry[Max]) {
         Max=i;
       }
    return Max;
@@ -32,7 +32,7 @@ int find_MaxIndex(int arry[], int size) {
 int find_MinIndex(int arry[], int size) {
     int Min=0;
     for (int i=1;i<size;i++)
-       if(arry[i]<arry[idx]) {
+       if(arry[i]<arry[Min]) {
          Min=i;
        }
     return Min;
