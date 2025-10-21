@@ -43,6 +43,27 @@ int find_MinIndex(int arry[],int size) {
   return Min;
 }
 
+float find_average(int arry[],int size) {
+   int sum=0;
+   for(int i=0;i<size;i++) {
+      sum += arry[i];
+   }
+   return (float)sum/size;
+}
 
-  
+int linearsearch(int arry[],int size,int value) {
+    for(int i=0;i<size;i++) {
+      if(arry[i]==value)
+      return i;
+    } 
+    return -1;   
+}
 
+void sort_array(int arry[],int size) {
+   for(int i=0;i<size;i++)
+      for(int j=i+1;j<size;j++)
+         if(arry[i]>arr[j]) {
+            int sri=arry[i];
+            arry[i]=arry[j];
+            arry[j]=sri;
+         }
