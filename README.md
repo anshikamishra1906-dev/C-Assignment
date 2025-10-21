@@ -1,7 +1,7 @@
 # C-assignment-1
 
-**Name:** Anshika Mishra
-**University Roll No.:** 12515000248
+**Name:** Anshika Mishra \n
+**University Roll No.:** 12515000248 
 **Class Roll No.:** 4
 **Course:** BTECH CSE
 **Subject:** Computer Programming
